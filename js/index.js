@@ -1,7 +1,4 @@
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-
-console.log(playRound(playerSelection, computerSelection));
+game()
 
 function getComputerChoice() {
     
@@ -45,4 +42,16 @@ function playRound (compChoice, playChoice) {
         return "Computer Wins, scissors beats paper";
     }
 
+}
+
+function game() {
+
+    for (let i = 0; i < 5; i++) {
+        
+        let playerSelection = "rock";
+        let computerSelection = getComputerChoice();
+
+        console.log(playRound(playerSelection, computerSelection));
+    }
+    
 }
